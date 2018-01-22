@@ -7,6 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('docs', function() {
+    this.route('api', function() {
+      this.route('class', { path: '/:class_id' });
+    });
+
+    this.route('x-button', { path: '/x-button'});
+  });
 });
 
 export default Router;

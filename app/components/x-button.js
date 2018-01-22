@@ -1,0 +1,1 @@
+export { default } from 'component-library/components/x-button';

@@ -1,0 +1,27 @@
+<h1>x-button</h1>
+
+{{#docs-demo as |demo|}}
+  {{#demo.live-example name='live-example'}}
+    {{#x-button onClick=(action (mut isShowing) (not isShowing))}}
+      Toggle
+    {{/x-button}}
+
+    {{#if isShowing}}
+      On
+    {{else}}
+      Off
+    {{/if}}
+  {{/demo.live-example}}
+{{/docs-demo}}
+
+<p>
+  <code>x-button</code> is our standard button element.
+</p>
+
+<h2>options</h2>
+
+<h3><code>onClick</code></h3>
+
+When the button is clicked, any action set to the <code>onClick</code> property is called.
+
+

@@ -10,7 +10,8 @@ TODO:
 - linting
 - visual regression testing
 - addon docs
-
+- accessibility considerations
+- future considerations
 
 
 ## Styles
@@ -21,33 +22,31 @@ Should Ember ever adopt a set of CSS conventions, we will migrate towards those.
 Styles are written in SASS's `.scss` format.
 
 We don't have any auto-loading mechanism, so you will
-need to manually `@import` files you add in the projects `app/styles/app.scss` manifest.
+need to manually `@import` files you add in the projects `app/styles/app.scss` or `addon/styles/addon.scss` manifest.
 
 ### File Locations
 The structure of `.scss` files should mirror the structure the `app/templates` folder. So,
 
 ```
 ├── components
-│   ├── bank-account-display.hbs
-├── pinterest
-│   ├── auth
-│   │   └── login.hbs
-│   ├── auth.hbs
-│   └── protected
-│       └── social-verify.hbs
+│   └── bank-account-display.hbs
+├── auth
+│   └── login.hbs
+├── auth.hbs
+└── protected
+    └── connect-account.hbs
 ```
 
 Would, maximally, have stylesheets:
 
 ```
 ├── components
-│   ├── bank-account-display.scss
-├── pinterest
-│   ├── auth
-│   │   └── login.scss
-│   ├── auth.scss
-│   └── protected
-│       └── social-verify.scss
+│   └── bank-account-display.scss
+├── auth
+│   └── login.scss
+├── auth.scss
+└── protected
+    └── connect-account.scss
 ```
 
 Stylesheet files are _optional_. That is, if a template doesn't require any custom CSS, the `.scss`
@@ -73,12 +72,11 @@ Defines a block, that block's class name should be `.bank-account-display`
 Likewise, if
 
 ```
-├── pinterest
-│   └── protected
-│       └── social-verify.scss
+├── protected
+│   └── connect-account.scss
 ```
 
-Defines a block, that block's class name should be `.pinterest-protected-social-verify`.
+Defines a block, that block's class name should be `.protected-connect-account`.
 
 ### Where to apply classnames.
 To avoid extra `<div>` nesting that makes styling confusing, a block's class name should be
@@ -106,5 +104,6 @@ But NOT
 
 ```
 <div class='bank-account-display'>
+  <!-- component content -->
 </div>
 ```
