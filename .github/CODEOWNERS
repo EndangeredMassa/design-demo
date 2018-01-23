@@ -1,0 +1,11 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in the repo.
+# *       @defunkt
+
+# Otherwise, patterns are matched and users are assigned:
+# *.js    @octocat @github/js
+# docs/*  docs@example.com
+
+README.md    @endangeredmassa-testing
