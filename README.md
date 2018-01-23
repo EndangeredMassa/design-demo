@@ -13,6 +13,7 @@ TODO:
 - accessibility considerations
 - future considerations
 
+There's a lot to do!
 
 ## Styles
 In the absence of specific CSS conventions in Ember/Ember-cli, we've adopted the following conventions.
