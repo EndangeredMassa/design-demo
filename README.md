@@ -5,13 +5,18 @@ A demo of how to take advantage of Ember's ecosystem to do awesome design work.
 TODO:
 
 - fingerprinting
-- living styleguide
-  - component builder
 - linting
 - visual regression testing
 - addon docs
 - accessibility considerations
 - future considerations
+- blueprint
+
+
+Extra:
+- focus mode for components
+- stand-alone component builder
+
 
 
 ## Styles

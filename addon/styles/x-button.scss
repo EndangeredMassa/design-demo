@@ -1,4 +1,4 @@
-.x-button {
+#x-button {
   background-color: #209cee;
   border-color: transparent;
   color: #fff;
@@ -7,5 +7,15 @@
 
   &:hover {
     background-color: #1496ed;
+    color:red;
   }
 }
+
+.block {
+  &__element {
+    &__subelement {
+      color: green;
+    }
+  }
+}
+
