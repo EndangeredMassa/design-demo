@@ -13,6 +13,7 @@ Router.map(function() {
     });
 
     this.route('x-button', { path: '/x-button'});
+    this.route('x-input', { path: '/x-input'});
   });
 });
 
