@@ -13,16 +13,10 @@ Demo:
 - fingerprinting: ember build --environment=production
 - future file structure
 
-TODO:
-- update scss linting rules
-- blueprint
-
-Extra:
-- focus mode for components
-- stand-alone component builder
-
 Future:
 - improve a11y error logging: https://github.com/ember-a11y/ember-a11y-testing/issues/18
+- focus mode for components
+- stand-alone component builder
 
 
 ## Possible Future File Structure

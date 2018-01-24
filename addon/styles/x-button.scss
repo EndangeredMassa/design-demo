@@ -11,6 +11,10 @@
   }
 }
 
+@mixin HYPHENATED-UPPERCASE {
+  content: '';
+}
+
 .block {
   &__element {
     &__subelement {
