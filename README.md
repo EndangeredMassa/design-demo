@@ -9,14 +9,12 @@ Demo:
 - percy integration
 - BEM rules
 - linting (including some bem rules)
+- a11y checking
 - fingerprinting: ember build --environment=production
-
+- future file structure
 
 TODO:
-
-- accessibility considerations
-- future considerations
-- update linting rules
+- update scss linting rules
 - blueprint
 
 Extra:
@@ -27,9 +25,47 @@ Future:
 - improve a11y error logging: https://github.com/ember-a11y/ember-a11y-testing/issues/18
 
 
+## Possible Future File Structure
+
+[Module Unification](https://github.com/dgeb/rfcs/blob/module-unification/text/0000-module-unification.md#example-application)
+will have a general file structure under `/src`.
+
+That places styles under `/src/styles/app.scss`. From there, we can import styles from our components. That would allow us to have a file structure like:
+
+```
+src
+├── ...
+└── ui
+    ├── ...
+    ├── components
+    │   └── list-paginator
+    │       ├── paginator-control
+    │       │   ├── component.js
+    │       │   ├── styles.scss
+    │       │   └── template.hbs
+    │       ├── component.js
+    │       ├── styles.scss
+    │       └── template.js
+    ├── routes
+    │   ├── application
+    │   │   └── template.hbs
+    │   ├── index
+    │   │   ├── controller.js
+    │   │   ├── route.js
+    │   │   └── template.hbs
+    │   └── posts
+    │       ├── route.js
+    │       ├── styles.scss
+    │       └── template.hbs
+    ├── styles
+    │   └── app.scss
+    └── index.html
+```
+
+File names in IDE tabs can get confusing with this style of file strucutre, but deduping names in tabes and showing paths in title bars help a lot.
 
 
-## Styles
+## Style Authoring Guidelines
 In the absence of specific CSS conventions in Ember/Ember-cli, we've adopted the following conventions.
 Should Ember ever adopt a set of CSS conventions, we will migrate towards those.
 
