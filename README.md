@@ -16,12 +16,16 @@ TODO:
 
 - accessibility considerations
 - future considerations
+- update linting rules
 - blueprint
-
 
 Extra:
 - focus mode for components
 - stand-alone component builder
+
+Future:
+- improve a11y error logging: https://github.com/ember-a11y/ember-a11y-testing/issues/18
+
 
 
 
